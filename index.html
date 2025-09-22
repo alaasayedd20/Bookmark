@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bookmark</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/bookmark.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="titlebg">
+          <h1>Bookmarker</h1>
+        </div>
+
+        <div class="qoute d-flex justify-content-center align-items-baseline">
+            <span><i class="fa-solid fa-bookmark"></i></span>
+          <h2>Bookmark your favorite sites</h2>
+          <span><i class="fa-solid fa-bookmark"></i></span>
+        </div>
+
+        <label for="siteName"><span><i class="fa-solid fa-book-bookmark"></i></span>Site Name</label>
+        <input oninput="validationName()" list="listItems" id="siteName" class="form-control mb-3 mt-2" placeholder="Bookmark Name" type="text">
+        <datalist id="listItems">
+          <option value="linkedin">
+          <option value="google">
+        </datalist>
+        <label for="siteURL"><span><i class="fa-solid fa-link"></i></span>Site URL</label>
+        <input oninput="validationURL()" id="siteURL" class="form-control mb-3 mt-2" placeholder="Website URL" type="text">
+        
+
+
+
+
+        <div class="submit text-center">
+          <button onclick="addLink()" id="sumbitBtn" class="btn btn-danger px-5 py-2" >Submit</button>
+        </div>
+
+
+
+
+        <table class="table mt-3 mb-5 text-center">
+          <thead>
+            <tr>
+              <th>index	</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="bookmarks">
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+      
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded pt-2 px-3 center">
+            <div class="modal-header d-flex justify-content-between">
+              <div class="circles">
+                <span class="circle1"><i class="fa-solid fa-circle"></i></span>
+                <span class="circle2"><i class="fa-solid fa-circle"></i></span>
+                <span class="circle3"><i class="fa-solid fa-circle"></i></span>
+              </div>
+              <button onclick="removeModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+              <h3>Site Name or Url is not valid, Please follow the rules below :</h3>
+              <div class="details"><span><i class="fa-regular fa-circle-right"></i></span><p>Site name must contain at least 3 characters</p></div>
+              <div class="details"><span><i class="fa-regular fa-circle-right"></i></span><p>Site URL must be a valid one</p></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+/* 
+font-family: "Pacifico", cursive;
+font-family: "Righteous", sans-serif;
+font-family: "PT Sans Caption", sans-serif;
+font-family: "Bree Serif", serif;
+*/
+
+
+
+body{
+    background-color: #F7ECDE;
+}
+.titlebg{
+    font-family: "Pacifico", cursive;
+    width: 270px;
+    height: 20px;
+    text-align: center;
+    margin: 5rem auto;
+    background-color: #FEC260;
+    position: relative;
+}
+h1{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    font-size: 3.2rem;
+}
+.qoute{
+    font-family: "Righteous", sans-serif;
+    border-top: dotted #000 2px;
+    margin-top: 3rem;
+    padding-block: 2rem;
+    /* background-color: goldenrod; */
+
+    background-image: linear-gradient(to right,green, goldenrod);
+    background-clip: text;
+    color: transparent;
+}
+.qoute span{
+    font-size: 1.5rem;
+}
+.qoute h2{
+    font-size: 1.6rem;
+}
+
+label, input, button, table{
+    font-family: "PT Sans Caption", sans-serif;
+}
+label{
+    font-weight: 700;
+}
+label span{
+    margin-right: 5px;
+}
+input.form-control:focus {
+    border-color: #FEC260;
+    box-shadow: 0 0 0 .25rem #FADEB4;
+}
+
+*::selection{
+    background-color: #FEC260;
+    color: #000;
+    background-clip: unset;
+}
+.submit{
+    padding-bottom: 1.5rem;
+    border-bottom: dotted #000 2px;
+
+}
+.submit button.btn{
+    background-color: #D1512D;
+    color: #fff;
+    transition: all 0.2s;
+    
+}
+.submit button:hover{
+    background-color: #BB4120;
+}
+
+.table{
+    --bs-table-bg: #F8F9FA;
+}
+table span{
+    margin-right: 5px;
+}
+table button.btn-success{
+    background-color: #9eb23b;
+}
+table button.btn-success:hover{
+    background-color: #8A9E23;
+}
+table button.btn-danger{
+    background-color: #eb1d36;
+}
+table button.btn-danger:hover{
+    background-color: #D30820;
+}
+
+
+.modal-header{
+    border: none;
+    font-size: 1.2rem;
+}
+.modal-header button{
+    background-color: transparent;
+    border: none;
+}
+.circle1{
+    color: #F15F5D;
+}
+.circle2{
+    color: #FEBE2E;
+}
+.circle3{
+    color: #4DB748;
+}
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-body h3{
+    font-family: "Bree Serif", serif; 
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+.modal-body .details{
+    font-family: "PT Sans Caption", sans-serif;
+    display: flex;
+    font-size: 1.1rem;
+    
+}
+
+.modal-body .details span{
+    color: #BB4120;
+    margin-right: 5px;
+}
+
+
